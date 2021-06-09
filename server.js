@@ -11,5 +11,5 @@ app.get('/', (_,res) => {
     res.send();
 });
 
-const port = 4444;
+const port = process.env.PORT;
 app.listen(port, () => console.log(`Server is up on port ${port}`));
